@@ -1,1 +1,157 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: bolder;
+}
+/* #3a4764, #182034, #637097, #d03f2f, #eae3dc */
+:root {
+  --main-bg: #3a4764;
+  --second-bg: #182034;
+  --main-text: #eae3dc;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .row {
+  width: 35%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row-validate {
+  background-color: #d03f2f;
+}
+
+.row-validate.hidden {
+  display: none;
+}
+
+.row-validate > p {
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
+
+.row-2 {
+  background-color: var(--second-bg);
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-2 > span {
+  width: 100%;
+  height: 18%;
+  font-size: 18px;
+  text-align: end;
+  padding: 15px 40px;
+}
+
+.row-2 > p {
+  width: 100%;
+  height: 80%;
+  font-size: 30px;
+  margin: 20px auto;
+  text-align: end;
+  padding: 10px 20px;
+}
+
+// .row-2 > input {
+//   width: 100%;
+//   height: 60%;
+//   background-color: var(--second-bg);
+//   color: var(--main-text);
+//   font-size: 30px;
+//   border: none;
+//   margin: 20px auto;
+//   text-align: end;
+//   padding: 10px 20px;
+// }
+
+// .row-2 > input:focus-visible {
+//   outline: var(--second-bg);
+// }
+
+
+.row-3 {
+  height: 390px;
+  background-color: var(--second-bg);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+  padding: 13px;
+}
+
+.row-3 .btn {
+  width: 23%;
+  height: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px #ccc;
+  transition: all 0.7s ease-in-out;
+}
+
+.row-3 .btn:hover {
+  opacity: .8;
+}
+
+.btn.reset,
+.btn.equal {
+  width: 47%;
+}
+
+.btn.del,
+.btn.reset {
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  box-shadow: 0 4px #505b70;
+}
+
+.btn.equal {
+  background-color: #d03f2f;
+  color: var(--main-text);
+  box-shadow: 0 4px #804d48;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  background-color: var(--second-bg);
+  color: var(--main-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer a {
+  color: var(--header-light);
+  text-decoration: underline;
+  padding-left: 7px;
+}

@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row row-1">
+    <h3>Calc</h3>
+    <div>Theme</div>
+  </div>
+  <div id="validate" class="row row-validate hidden">
+    <p>Cannot divide by zero</p>
+  </div>
+  <div class="row row-2">
+    <span>{{watchOperate}}</span>
+    <p>{{outputValue | number}}</p>
+  </div>
+  <div class="row row-3">
+    <button class="btn" (click)="print($event)">7</button>
+    <button class="btn" (click)="print($event)">8</button>
+    <button class="btn" (click)="print($event)">9</button>
+    <button class="btn del" (click)="delClick($event)">DEL</button>
+    <button class="btn" (click)="print($event)">4</button>
+    <button class="btn" (click)="print($event)">5</button>
+    <button class="btn" (click)="print($event)">6</button>
+    <button class="btn" (click)="operatorKey($event)">+</button>
+    <button class="btn" (click)="print($event)">1</button>
+    <button class="btn" (click)="print($event)">2</button>
+    <button class="btn" (click)="print($event)">3</button>
+    <button class="btn" (click)="operatorKey($event)">-</button>
+    <button class="btn" (click)="print($event)">.</button>
+    <button class="btn" (click)="print($event)">0</button>
+    <button class="btn" (click)="operatorKey($event)">/</button>
+    <button class="btn" (click)="operatorKey($event)">*</button>
+    <button class="btn reset" (click)="resetClick($event)">RESET</button>
+    <button class="btn equal" (click)="equalClick($event)">=</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Challenge by: <a target="_blank" href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29"> Frontend Mentor</a></p>
+  <p>Coded by: <a target="_blank" href="https://github.com/obadatech01/calculator-app-angular"> Obada Yehia</a></p>
+</footer>
